@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <!-- ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- SLIDERS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link rel="stylesheet" href="/estilos/fotos.css">
+
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="fotos">
+        <nav class="nav-list">
+            <img src="/img/Dino.png" alt="Logo Dino" class="imgDino">
+            <ul class="nav-menu show">
+                <li>
+                    <a href="/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="/ventanas/fotos.html">Fotos</a>
+                </li>
+                <li>
+                    <a href="/ventanas/videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="/ventanas/acercade.html">Acerca de</a>
+                </li>
+                <li>
+                    <a href="/ventanas/informacion.html">Informacion</a>
+                </li>
+                <li>
+                    <a href="/ventanas/documentos.html">Documentos</a>
+                </li>
+                <li>
+                    <a href="/ventanas/mas.html">Mas</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-lupa">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+
+        <img name="slider" class="slider-img">
+
+        <script>
+            window.addEventListener('load', function (){
+                console.log('El contenido ha cargado');
+
+                var imagenes= [];
+
+                imagenes[0] = '/img/slider/slider1.jpg';
+                imagenes[1] = '/img/slider/slider2.png';
+                imagenes[2] = '/img/slider/slider3.jpeg';
+
+                var indice_imagenes = 0; 
+                var tiempo = 2000;
+
+                function cambiar_imagenes(){
+
+                document.slider.src = imagenes[indice_imagenes];
+
+                if(indice_imagenes<2) {
+                    indice_imagenes++;
+                } else {
+                    indice_imagenes = 0;
+                }
+
+            }
+
+            setInterval(cambiar_imagenes, tiempo);
+
+            });
+        </script>
+    
+        <hr>
+        <h1 class="galeria-img">Galeria de imagenes.</h1>
+
+        <div class="container">
+            <div class="item">
+                <img src="/img/Tsuru-Tuneado-Supreme.jpg" alt="" class="item-img">
+                <div class="item-text">
+                    <h3>Tsurus tuneados</h3>
+                    <p>Los Tsurus tuneados pueden ser realmente una verdadera joya, estos automoviles nunca han visto unas luces traseras, ahora imaginate ponerle unas llamas para que valla mas rapido.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Locura.jpg" alt="" class="item-img">
+                <div class="item-text">
+                    <h3>El locuras</h3>
+                    <p>Este especimen se desconoce su pasado, pero lo que realmente sabemos es que esta loco y es mas peligroso que un sicario.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Mickye mouse vs chuy.jpg" alt="" class="item-img">
+                <div class="item-text">
+                    <h3>Pelea del año</h3>
+                    <p>La mejor pelea que hubo del siglo fue la de Mickey mouse VS Chuy, Fue una bola de putazos que estuvo involucrada en esta pelea.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/pito de mickey.jpg" alt="" class="item-img">
+                <div class="item-text">
+                    <h3>Enfermo mental</h3>
+                    <p>Puede que este relacionado con el locuras, como se puede ver mato a la rata y la usa como condon, ya nomas le faltaba tiner para recrear una vieja hostoria.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/slider/slider2.png" alt="" class="item-img">
+                <div class="item-text">
+                    <h3>Chino caliente</h3>
+                    <p>Este chaval no se queda atras, se le dice chino caliente por que se le ha visto en la calle masturbando perros.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/pizza corre.jpg" alt="" class="item-img">
+                <div class="item-text">
+                    <h3>La pizza</h3>
+                    <p>A esta pizza le crecieron patas y se fue a chingar a su madre.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/el bicho.jpeg" alt="" class="item-img">
+                <div>
+                    <h3>El bicho</h3>
+                    <p>DE dia puede ser el bicho, pero de noche es la bichota.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/el-chico-hot.jpg" alt="" class="item-img">
+                <div>
+                    <h3>Chico hot</h3>
+                    <p>Se calienta como comal al fuego</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/pepo-diablo.jpg" alt="" class="item-img">
+                <div>
+                    <h3>pepo diablo</h3>
+                    <p>El diablo anda suelto, va pisando el mismo pavimento.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/pepo-santo.jpg" alt="" class="item-img">
+                <div>
+                    <h3>Pepo santo</h3>
+                    <p>Es la contraparte de pepo diablo, este no anda suelto</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/c90 opresora.jpg" alt="" class="item-img">
+                <div>
+                    <h3>El CJ</h3>
+                    <p>La C90 la moto mas rapida y mas tuneada del mundo</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/img/Chivo.jpg" alt="" class="item-img">
+                <div>
+                    <h3>Rey chivo</h3>
+                    <p>Un guerrero que peleo en muchas batallas</p>
+                </div>
+            </div>
+        </div>
+        <section class="social">
+            <p>Seguirme</p>
+            <div class="links">
+                <a href="https://www.facebook.com/13Dino/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/Zack_166">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="/main.js"></script>
+        
+</body>
+</html>
